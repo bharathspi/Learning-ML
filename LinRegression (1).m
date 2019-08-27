@@ -6,7 +6,6 @@ function LinRegression()
     RegMdl = [0;-1]; %y = -X
     W = findRegModel(DataPoints, RegMdl);
 end
-
 function W = findRegModel(DataPts, W)
     xMin = min(DataPts(2, :)) - 1;
     xMax = max(DataPts(2, :)) + 1;
